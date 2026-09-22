@@ -2,7 +2,6 @@ const cursor = document.querySelector('.cursor-dot');
 
 const translations = {
   en: {
-    welcome: "Hi, I'm Csaba Hajdu.",
     heroEyebrow: '<span class="eyebrow-line"></span> Drone hobbyist · Open to new ideas',
     heroIntro: 'I create cinematic aerial stories for places, people, and ideas that deserve a different perspective.',
     scrollCue: '<span></span> Scroll to descend',
@@ -20,7 +19,6 @@ const translations = {
     contactTitle: 'Have a view<br><em>in mind?</em>'
   },
   hu: {
-    welcome: 'Szia, Hajdu Csaba vagyok.',
     heroEyebrow: '<span class="eyebrow-line"></span> Drón hobbista · Nyitott az új ötletekre',
     heroIntro: 'Légi képeket és történeteket készítek olyan helyekről, emberekről és gondolatokról, amelyek megérdemelnek egy másik nézőpontot.',
     scrollCue: '<span></span> Görgess tovább',
@@ -38,7 +36,6 @@ const translations = {
     contactTitle: 'Van egy nézőpontod<br><em>a fejedben?</em>'
   },
   sk: {
-    welcome: 'Ahoj, som Csaba Hajdu.',
     heroEyebrow: '<span class="eyebrow-line"></span> Nadšenec do dronov · Otvorený novým nápadom',
     heroIntro: 'Vytváram letecké zábery a príbehy o miestach, ľuďoch a myšlienkach, ktoré si zaslúžia inú perspektívu.',
     scrollCue: '<span></span> Posuňte sa nižšie',
@@ -65,10 +62,10 @@ const setLanguage = (language) => {
     element.innerHTML = translations[selectedLanguage][element.dataset.i18n];
   });
   languageButtons.forEach((button) => button.classList.toggle('is-active', button.dataset.language === selectedLanguage));
-  localStorage.setItem('portfolio-language-v2', selectedLanguage);
+  localStorage.setItem('portfolio-language', selectedLanguage);
 };
 languageButtons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.language)));
-setLanguage(localStorage.getItem('portfolio-language-v2') || 'hu');
+setLanguage(localStorage.getItem('portfolio-language') || 'en');
 
 const imageLightbox = document.querySelector('#image-lightbox');
 const lightboxImage = document.querySelector('.lightbox-image');
