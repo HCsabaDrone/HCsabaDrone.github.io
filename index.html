@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Csaba Drone — a personal portfolio built around a passion for aerial imagery.">
+  <title>Csaba Drone — Eyes Above</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="cursor-dot"></div>
+  <a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
+  <div class="image-lightbox" id="image-lightbox" hidden role="dialog" aria-modal="true" aria-label="Expanded portfolio image">
+    <button class="lightbox-close" type="button" aria-label="Close expanded image">×</button>
+    <div class="lightbox-image" role="img"></div>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Csaba Drone home">
+      <span class="brand-mark">CD</span>
+      <span>CSABA<br>DRONE</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#work">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="language-switcher" aria-label="Language selector">
+      <button type="button" class="language-button is-active" data-language="en">EN</button>
+      <span>/</span>
+      <button type="button" class="language-button" data-language="hu">HU</button>
+      <span>/</span>
+      <button type="button" class="language-button" data-language="sk">SK</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="video-intro" aria-label="Opening landscape image">
+      <div class="intro-image" role="img" aria-label="Landscape photograph"></div>
+      <div class="video-shade"></div>
+      <div class="video-welcome">
+        <p>Hi, I'm Csaba Hajdu.</p>
+        <a class="instagram-link" href="https://www.instagram.com/cshaba__/" target="_blank" rel="noreferrer" aria-label="Csaba Hajdu on Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="instagram-dot" cx="17.5" cy="6.5" r="1"></circle></svg>
+        </a>
+      </div>
+      <div class="video-scroll-hint mono">Scroll down to see more <span>↓</span></div>
+    </section>
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow"><span class="eyebrow-line"></span> Drone hobbyist · Open to new ideas</p>
+        <h1>Eyes<br><em>above.</em></h1>
+        <p class="hero-intro" data-i18n="heroIntro">I create cinematic aerial stories for places, people, and ideas that deserve a different perspective.</p>
+        <a class="circle-link" href="#work" aria-label="Explore selected work"><span>Explore<br>work</span><b>↓</b></a>
+      </div>
+      <div class="hero-visual reveal reveal-delay-1">
+        <div class="hero-image image-load" role="img" aria-label="Aerial view of a winding road through a green landscape"></div>
+        <div class="hero-caption mono">46.413827<br>11.575889</div>
+      </div>
+      <div class="scroll-cue mono" data-i18n="scrollCue"><span></span> Scroll to descend</div>
+    </section>
+
+    <section class="statement section-pad reveal">
+      <p class="eyebrow" data-i18n="approachEyebrow">01 / The approach</p>
+      <p class="statement-text" data-i18n="statement">The sky is not a viewpoint.<br><span>It is a language.</span></p>
+    </section>
+
+    <section id="work" class="work section-pad">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow" data-i18n="portfolioEyebrow">02 / Portfolio</p><h2 data-i18n="portfolioTitle">From up here,<br><em>everything moves.</em></h2></div>
+        <p class="section-aside" data-i18n="portfolioAside">A collection of personal projects and experiments, made with curiosity, patience, and a little altitude.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project project-wide reveal">
+          <a href="#contact" class="project-image image-load project-one" aria-label="View project The Great Plain"><span class="project-arrow">↗</span></a>
+          <div class="project-meta"><div><span class="project-number mono">01</span><h3>The Great Plain</h3></div><p class="mono">Film · 2024</p></div>
+        </article>
+        <article class="project project-tall reveal reveal-delay-1">
+          <a href="#contact" class="project-image image-load project-two" aria-label="View project Still water"><span class="project-arrow">↗</span></a>
+          <div class="project-meta"><div><span class="project-number mono">02</span><h3>Still water</h3></div><p class="mono">Campaign · 2023</p></div>
+        </article>
+        <article class="project project-small reveal reveal-delay-2">
+          <a href="#contact" class="project-image image-load project-three" aria-label="View project Concrete poetry"><span class="project-arrow">↗</span></a>
+          <div class="project-meta"><div><span class="project-number mono">03</span><h3>Concrete poetry</h3></div><p class="mono">Editorial · 2023</p></div>
+        </article>
+        <article class="project project-small reveal"><a href="#contact" class="project-image image-load project-four" aria-label="View project Open fields"><span class="project-arrow">↗</span></a></article>
+        <article class="project project-small reveal reveal-delay-1"><a href="#contact" class="project-image image-load project-five" aria-label="View project Blue hour"><span class="project-arrow">↗</span></a></article>
+        <article class="project extra-project reveal reveal-delay-2"><a href="#contact" class="project-image image-load project-six" aria-label="View project Lines in motion"><span class="project-arrow">↗</span></a></article>
+        <article class="project extra-project reveal"><a href="#contact" class="project-image image-load project-seven" aria-label="View project The quiet coast"><span class="project-arrow">↗</span></a></article>
+        <article class="project extra-project reveal reveal-delay-1"><a href="#contact" class="project-image image-load project-eight" aria-label="View project After rain"><span class="project-arrow">↗</span></a></article>
+        <article class="project extra-project reveal"><a href="#contact" class="project-image image-load project-nine" aria-label="View project First light"><span class="project-arrow">↗</span></a></article>
+        <article class="project extra-project reveal reveal-delay-1"><a href="#contact" class="project-image image-load project-ten" aria-label="View project New perspective"><span class="project-arrow">↗</span></a></article>
+        <article class="project extra-project reveal reveal-delay-2"><a href="#contact" class="project-image image-load project-eleven" aria-label="View project Drift"><span class="project-arrow">↗</span></a></article>
+        <article class="project extra-project reveal"><a href="#contact" class="project-image image-load project-twelve" aria-label="View project Wide open"><span class="project-arrow">↗</span></a></article>
+      </div>
+      <div class="all-work reveal"><button class="more-projects-button" type="button" aria-expanded="false"><span class="button-label" data-i18n="morePhotos">More photos</span><span>↓</span></button></div>
+    </section>
+
+    <section id="about" class="about section-pad">
+      <div class="about-image reveal image-load" role="img" aria-label="Drone pilot standing in a field at sunset"></div>
+      <div class="about-copy reveal reveal-delay-1">
+        <p class="eyebrow" data-i18n="aboutEyebrow">03 / A little context</p>
+        <h2 data-i18n="aboutTitle">Good work starts<br>with <em>looking closer.</em></h2>
+        <p data-i18n="aboutTextOne">Drones and aerial imagery are currently part of my hobby, but I would like to make a living from it one day. This website is the first step on that journey: a place to share what I see and what I can create.</p>
+        <p data-i18n="aboutTextTwo">I do not have a big production team or a polished story behind me. I bring my curiosity, creativity, willingness to learn, and all the knowledge I have gathered so far.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-pad reveal">
+      <p class="eyebrow" data-i18n="contactEyebrow">04 / Your turn</p>
+      <h2 data-i18n="contactTitle">Have a view<br><em>in mind?</em></h2>
+      <a class="email-link" href="mailto:hcsba12@gmail.com">hcsba12@gmail.com <span>↗</span></a>
+      <div class="contact-footer"><span class="mono">Open to learning, creating, and collaborating</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-pad"><span>© 2024 Csaba Drone</span><span class="mono">Made to be seen from above.</span></footer>
+</body>
+</html>
