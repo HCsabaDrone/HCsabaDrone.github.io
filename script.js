@@ -65,10 +65,10 @@ const setLanguage = (language) => {
     element.innerHTML = translations[selectedLanguage][element.dataset.i18n];
   });
   languageButtons.forEach((button) => button.classList.toggle('is-active', button.dataset.language === selectedLanguage));
-  localStorage.setItem('portfolio-language', selectedLanguage);
+  localStorage.setItem('portfolio-language-v2', selectedLanguage);
 };
 languageButtons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.language)));
-setLanguage(localStorage.getItem('portfolio-language') || 'en');
+setLanguage(localStorage.getItem('portfolio-language-v2') || 'hu');
 
 const imageLightbox = document.querySelector('#image-lightbox');
 const lightboxImage = document.querySelector('.lightbox-image');
